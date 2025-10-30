@@ -1,0 +1,62 @@
+.table-manager-minimal-container {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-count {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.manager-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.action-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.manager-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-manager {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #111827;
+    color: #fff;
+    font-weight: 700;
+    transition: opacity 0.2s;
+}
+
+.btn-manager:hover {
+    opacity: 0.9;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    margin: 10px 0;
+}
+
+.success-message {
+    color: #28a745;
+    margin: 10px 0;
+}

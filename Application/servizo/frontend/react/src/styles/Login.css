@@ -1,0 +1,29 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.register-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/background-vertical.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;                 
+  justify-content: center;       
+  align-items: center;           
+}
+
+.form-container h1{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container p{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+

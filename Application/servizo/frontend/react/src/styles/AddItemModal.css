@@ -1,0 +1,236 @@
+/* AddItemModal.css */
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.modal-body {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.menu-container {
+    flex: 2;
+    border-right: 1px solid #e9ecef;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-filters {
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.category-buttons button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.category-buttons button.active {
+    background-color: #6c757d;
+    color: white;
+    border-color: #6c757d;
+}
+
+
+.category-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #495057;
+    border-bottom: 2px solid #6c757d;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 1.1em;
+}
+
+.menu-item-name {
+    font-weight: 500;
+}
+
+.menu-item-price {
+    color: #555;
+}
+
+.add-to-cart-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.cart-container {
+    flex: 1.5;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.cart-container h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+}
+
+.cart-container p {
+    font-size: 1.1em;
+}
+
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-total {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 2px solid #dee2e6;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.confirm-order-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.confirm-order-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        height: 90vh;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .menu-container {
+        border-right: none;
+        border-bottom: 1px solid #e9ecef;
+        flex: 1; 
+    }
+
+    .cart-container {
+        flex: 1; 
+    }
+}
