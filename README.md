@@ -7,14 +7,32 @@
 
 
 
-## Usage
+## Quick Start
 
 ```
-Starting Django server: python manage.py runserver
-Starting React server: npm run dev
-Starting Stripe listener: stripe listen --forward-to http://127.0.0.1:8000/api/payments/webhook/
+> git clone https://github.com/Nemanja264/Servizo.git 
+> cd Servizo
+
+> cd Application/servizo
+> python manage.py runserver
+> stripe listen --forward-to http://127.0.0.1:8000/api/payments/webhook/
+
+> cd ./frontend/react
+> npm install
+> npm run dev 
 ```
 
 
 ## Contributors (Students)
++ Nemanja Ilić (My part here was Full Backend development)
++ Aleksandar Đorđević
++ Lazar Mijović
++ Veljko Najdanović
+
+## 📦 Technology stack  
+  
+| **Backend** | **Frontend** | **Payments** | **Database** |  
+| --- | --- | --- | --- |
+| ![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white) | ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB) | ![Stripe](https://img.shields.io/badge/Stripe-635BFF?logo=stripe&logoColor=white) | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white) |
+
 
